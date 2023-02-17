@@ -1,6 +1,6 @@
-
+import CheckGrid from "../Sudoku_Check/sudokuCheck";
 //This function is the blueprint for every case that will populate the sudoku grid
-const Case = () => {
+function Case() {
         this.value = 0;
         this.wasErased = false;
 }
@@ -86,6 +86,8 @@ const GenerateGrid = () =>
     }
 
     RandomizeLine(grid, 0);
+
+    return grid;
 }
 
 export default GenerateGrid

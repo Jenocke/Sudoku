@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import GenerateGrid from './generator/sudokuGen';
 
 function App() {
-  return (
-    //TODO
+
+  const grid = GenerateGrid();
+  //TODO
     /*
       -Generate Sudoku
       -Display grid to the player
@@ -12,7 +14,12 @@ function App() {
       -check if the completed sudoku is valid
       -if the grid is valid, tell the player he won
     */
-  );
+  return (
+    <>
+       {console.log(grid)}
+    </>
+
+  )
 }
 
 export default App;
