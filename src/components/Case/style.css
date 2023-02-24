@@ -1,3 +1,10 @@
 .case{
-    margin: 10px;
+    margin: 0px;
+}
+
+input {
+    height: 87%;
+    width: 88%;
+    margin-bottom: 20px;
+    text-align: center;
 }
