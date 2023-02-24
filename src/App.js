@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import GenerateGrid from './generator/sudokuGen';
+import Grid from './components/Grid';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
     */
   return (
     <>
-       {console.log(grid)}
+       <Grid grid={grid}/>
     </>
 
   )

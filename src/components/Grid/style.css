@@ -1,0 +1,7 @@
+.mainGrid {
+    display: grid;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 15%;
+    border: 2px solid black;
+}
