@@ -1,14 +1,14 @@
 import Case from "../Case";
 import "./style.css";
 
-const Line = ({line}) => {
+const Line = ({line, lineID}) => {
 
     
     return(
         <>
-        <div className="line">
-            {line.map(item => {
-                return <Case gridCase={item}/>
+        <div className="line" id={lineID}>
+            {line.map((item, index) => {
+                return <Case gridCase={item} caseID={lineID +"" + index}/>
             })}
         </div>
         </>

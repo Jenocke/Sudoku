@@ -18,7 +18,7 @@ const RandomizeCase = (grid, i, j, number) => {
 
     let isGood = false;
 
-    if (j == 0) {
+    if (j === 0) {
         numberToTry = memoryNumbersArray.splice(memoryNumbersArray.indexOf(number), 1); //Retrieveing the number we're about to try from the memory array
         grid[i][j].value = numberToTry[0];
         if (CheckGrid(grid, true)) //Trying to validate the number for that case.
